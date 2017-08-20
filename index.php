@@ -64,16 +64,6 @@
 					</div>
 					<div class="col-4">
 						<div class="photo">
-							<a href="http://test1.com.pl" target="blank">
-								<img src="images/fundacja.jpg" alt="strona www">
-								<div class="photo-shadow"></div>
-								<div class="photo-title">fundacja</div>
-							</a>
-						</div>
-						<p>Projekt witryny internetowej dla fundacji "Samodzielność od kuchni"</p>
-					</div>	
-					<div class="col-4">
-						<div class="photo">
 							<a href="http://interlux.epizy.com" target="blank">
 								<img src="images/intelux.jpg" alt="strona www">
 								<div class="photo-shadow"></div>
@@ -82,6 +72,16 @@
 						</div>
 						<p>Praca konkursowa - projekt strony internetowej dla firmy Interlux</p>
 					</div>
+					<div class="col-4">
+						<div class="photo">
+							<a href="http://test1.com.pl" target="blank">
+								<img src="images/fundacja.jpg" alt="strona www">
+								<div class="photo-shadow"></div>
+								<div class="photo-title">fundacja</div>
+							</a>
+						</div>
+						<p>Projekt witryny internetowej dla fundacji "Samodzielność od kuchni"</p>
+					</div>	
 				</div>
 			</div>
 		</section>
