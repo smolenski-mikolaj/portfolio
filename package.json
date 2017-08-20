@@ -1,0 +1,23 @@
+{
+  "name": "kodilla-portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smolenski-mikolaj/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smolenski-mikolaj/portfolio/issues"
+  },
+  "homepage": "https://github.com/smolenski-mikolaj/portfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  }
+}
