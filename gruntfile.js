@@ -8,9 +8,9 @@ module.exports = function(grunt) {
   		},
   		dist: {
   			files: {
-  				'main.css': 'main.sass'
-  			}
-  		}
+  				'css/style.css': 'css/style.sass'
+  			},
+  		},
   	},
 
   	imagemin: {
@@ -21,17 +21,17 @@ module.exports = function(grunt) {
   				src: ['**/*.{png,jpg,gif}'],
   				dest: 'images/build/'
   			}]
-  		}
+  		},
   	},
 
 	watch: {
-	  scripts: {
-		files: ['**/*.js'],
-		tasks: ['jshint'],
-		options: {
-		  spawn: false,
+		scripts: {
+			files: ['css/*.sass'],
+			tasks: ['sass'],
+			options: {
+				spawn: false,
+			},
 		},
-	  },
 	},
 	
   });
