@@ -21,7 +21,7 @@ module.exports = function(grunt) {
   				src: ['**/*.{png,jpg,gif}'],
   				dest: 'images/build/'
   			}]
-  		}
+  		},
   	},
 
 	watch: {
