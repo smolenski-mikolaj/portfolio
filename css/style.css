@@ -13,6 +13,9 @@ body {
 a {
   text-decoration: none;
   color: #fff; }
+  a:hover {
+    text-decoration: none;
+    color: #fff; }
 
 header {
   height: 300px;
@@ -23,11 +26,7 @@ header {
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 10px;
   position: relative; }
-
-nav {
-  overflow: hidden; }
 
 .logo {
   float: left;
@@ -37,27 +36,57 @@ nav {
   font-style: italic;
   text-shadow: 2px 2px #1d6cad; }
 
-.links {
+.nav-trigger {
   float: right;
-  padding-top: 10px; }
-  .links ul {
-    list-style: none; }
-    .links ul li {
-      display: inline-block; }
-      .links ul li a {
+  margin-top: 30px;
+  font-size: 30px;
+  cursor: pointer; }
+
+@media (min-width: 769px) {
+  .nav-trigger {
+    display: none; }
+  nav {
+    display: inline-block !important;
+    float: right;
+    margin-top: 25px; }
+    nav ul {
+      list-style: none;
+      padding: 0; }
+      nav ul li {
+        display: inline-block; }
+        nav ul li a {
+          display: block;
+          padding: 15px;
+          font-size: 18px;
+          text-shadow: 1px 1px #1d6cad;
+          border-bottom: 1px solid transparent;
+          transition: .2s; }
+          nav ul li a:hover {
+            border-bottom: 1px solid #80bff2; } }
+
+@media (max-width: 768px) {
+  .nav-trigger {
+    display: inline-block; }
+  nav {
+    display: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    clear: both;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 10; }
+    nav ul {
+      padding: 0; }
+      nav ul li {
         display: block;
-        padding: 15px;
-        font-size: 18px;
-        text-shadow: 1px 1px #1d6cad;
-        border-bottom: 1px solid transparent;
-        transition: .2s; }
-        .links ul li a:hover {
-          border-bottom: 1px solid #80bff2; }
+        padding: 15px 5px; } }
 
 .slogan {
   font-size: 36px;
   font-family: "Lato", sans-serif;
-  margin-top: 45px; }
+  clear: left;
+  padding-top: 40px; }
 
 .skills {
   position: relative;
@@ -92,64 +121,18 @@ h1 {
   height: 100%;
   background: rgba(69, 76, 84, 0.95); }
 
-/* grid */
-.row:before, .row:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-[class*="col-"] {
-  float: left;
-  min-height: 1px;
-  padding: 0 20px; }
-
-.col-1 {
-  width: 8.33%; }
-
-.col-2 {
-  width: 16.66%; }
-
-.col-3 {
-  width: 25%; }
-
-.col-4 {
-  width: 33.33%; }
-
-.col-5 {
-  width: 41.66%; }
-
-.col-6 {
-  width: 50%; }
-
-.col-7 {
-  width: 58.33%; }
-
-.col-8 {
-  width: 66.66%; }
-
-.col-9 {
-  width: 75%; }
-
-.col-10 {
-  width: 83.33%; }
-
-.col-11 {
-  width: 91.66%; }
-
-.col-12 {
-  width: 100%; }
-
 .skills .row {
   text-align: center;
   padding-bottom: 50px; }
   .skills .row img {
-    height: 250px;
+    height: 150px;
     width: auto;
     max-width: 100%; }
   .skills .row p {
     color: #459BE4;
+    padding-top: 10px;
     font-weight: bold;
-    font-size: 30px; }
+    font-size: 20px; }
 
 .projects {
   padding-bottom: 50px; }
@@ -193,7 +176,7 @@ h1 {
 
 .projects .row p {
   color: #eaf1f7;
-  font-weight: bold;
+  padding-top: 5px;
   font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map */
