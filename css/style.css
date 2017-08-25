@@ -26,36 +26,46 @@ header {
   max-width: 1200px;
   position: relative; }
 
-.nav-trigger {
-  float: right;
-  margin-top: 30px;
-  font-size: 30px;
-  cursor: pointer; }
-
 .slogan {
   font-size: 36px;
-  line-height: 40px;
   font-family: "Lato", sans-serif;
   transition: .2s; }
 
-.skills {
-  background: url("../images/office.jpeg") no-repeat top;
-  background-size: cover;
-  position: relative; }
+section {
+  position: relative;
+  padding: 50px 0; }
 
 h1 {
   margin: 0;
-  padding: 50px 20px 100px 0px;
   font-size: 24px;
   font-family: "Ubuntu", sans-serif;
-  transition: .2s; }
+  transition: .2s;
+  padding-bottom: 50px; }
+
+.skills {
+  background: url("../images/view.jpg") no-repeat center;
+  background-size: cover; }
+  .skills h1 {
+    padding: 20px 0 90px 0; }
+  .skills .row {
+    text-align: center; }
+    .skills .row img {
+      height: 100px;
+      width: auto;
+      max-width: 100%; }
+    .skills .row p {
+      color: #459BE4;
+      padding-top: 10px;
+      padding-bottom: 50px;
+      font-weight: bold;
+      font-size: 16px; }
 
 .skills-face {
   position: absolute;
-  top: -150px;
+  top: -175px;
   right: 10px;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   background: #f2f2f2;
   z-index: 5;
   border: 4px solid #fff;
@@ -67,25 +77,12 @@ h1 {
     height: 100%;
     width: auto; }
 
-.skills-shadow {
+.page-shadow {
   position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.95); }
-
-.skills .row {
-  text-align: center; }
-  .skills .row img {
-    height: 100px;
-    width: auto;
-    max-width: 100%;
-    transition: .2s; }
-  .skills .row p {
-    color: #459BE4;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    font-weight: bold;
-    font-size: 16px; }
 
 .projects .photo {
   position: relative; }
@@ -96,12 +93,12 @@ h1 {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba(14, 72, 119, 0.8);
-  border-radius: 2px;
+  background: rgba(242, 242, 242, 0.9);
   transition: .3s; }
 
 .projects .photo-title {
   position: absolute;
+  color: #459BE4;
   top: 80%;
   width: 100%;
   font-size: 30px;
@@ -121,14 +118,52 @@ h1 {
   width: 100%;
   height: auto;
   o-object-fit: cover;
-  object-fit: cover;
-  border-radius: 2px; }
+  object-fit: cover; }
 
 .projects .row p {
-  color: #eaf1f7;
   padding-top: 5px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   font-size: 16px; }
+
+.education, .experience {
+  background: url("../images/mgr.jpg") no-repeat center;
+  background-size: cover; }
+  .education .row, .experience .row {
+    font-size: 18px; }
+    .education .row .col-left, .experience .row .col-left {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: right; }
+    .education .row .col-right, .experience .row .col-right {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-left: 2px solid #459BE4;
+      text-align: left;
+      position: relative; }
+      .education .row .col-right .dot, .experience .row .col-right .dot {
+        position: absolute;
+        left: -7px;
+        top: 28px;
+        width: 12px;
+        height: 12px;
+        background: #459BE4;
+        border-radius: 50%; }
+    .education .row .date, .experience .row .date {
+      color: #459BE4;
+      font-weight: bold;
+      margin-bottom: 0; }
+    .education .row .school, .experience .row .school {
+      font-weight: bold;
+      margin-bottom: 4px; }
+    .education .row .about-school, .experience .row .about-school {
+      display: inline-block;
+      border-top: 1px solid #d8d8d8;
+      padding-top: 5px;
+      font-size: 14px; }
+
+.experience {
+  background: url("../images/work2.jpg") no-repeat center;
+  background-size: cover; }
 
 @media (max-width: 991px) {
   .slogan {
@@ -145,10 +180,6 @@ h1 {
     right: 50%;
     margin-right: -100px; }
   .skills h1 {
-    padding: 120px 20px 60px 0; }
-  .skills .row img {
-    height: 50px;
-    width: auto;
-    max-width: 100%; } }
+    padding: 120px 0 60px 0; } }
 
 /*# sourceMappingURL=style.css.map */
