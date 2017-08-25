@@ -9,7 +9,7 @@ body
 	padding: 0
 	font-family: "Ubuntu", sans-serif
 	color: #fff
-	background: #459be4
+	background: #437dcc
 
 a 
 	text-decoration: none
@@ -23,6 +23,8 @@ header
 	width: 100%	
 	color: #fff
 	-webkit-transform: translateZ(0)
+	position: relative
+	z-index: 10
 
 .container 
 	margin: 0 auto
@@ -43,47 +45,6 @@ header
 	font-size: 30px
 	cursor: pointer
 					
-@media (min-width:769px) 
-	.nav-trigger
-		display: none
-	nav
-		display: inline-block !important
-		float: right
-		margin-top: 25px
-		ul 
-			list-style: none
-			padding: 0
-			li 
-				display: inline-block
-				a 
-					display: block
-					padding: 15px
-					font-size: 18px
-					text-shadow: 1px 1px #1d6cad
-					border-bottom: 1px solid transparent
-					transition: .2s
-					&:hover
-						border-bottom: 1px solid #80bff2	
-
-@media (max-width:768px)
-	.nav-trigger
-		display: inline-block
-		
-	nav
-		display: none
-		padding: 10px
-		background-color: rgba(0,0,0,0.8)
-		clear: both
-		position: absolute
-		top: 75px
-		right: 0
-		z-index: 10
-		ul
-			padding: 0
-			li
-				display: block
-				padding: 15px 5px	
-					
 .slogan 
 	font-size: 36px
 	font-family: "Lato", sans-serif
@@ -91,13 +52,13 @@ header
 	padding-top: 40px;
 
 .skills 
-	position: relative
 	background: url("../images/office.jpeg") no-repeat top
 	background-size: cover
+	position: relative
 
 h1 
 	margin: 0
-	padding: 50px 20px 80px 20px
+	padding: 50px 20px 80px 0px
 	font-size: 24px
 	font-family: "Lato", sans-serif
 
@@ -109,7 +70,7 @@ h1
 	width: 200px
 	background: #f2f2f2
 	z-index: 5
-	border: 8px solid #459BE4
+	border: 10px solid #437dcc
 	border-radius: 50%
 	overflow: hidden
 	text-align: center
@@ -126,7 +87,6 @@ h1
 .skills 
 	.row 
 		text-align: center
-		padding-bottom: 50px
 		img 
 			height: 150px
 			width: auto
@@ -134,12 +94,10 @@ h1
 		p 
 			color: #459BE4
 			padding-top: 10px
+			padding-bottom: 50px
 			font-weight: bold
 			font-size: 20px
 			
-.projects 
-	padding-bottom: 50px
-
 .projects 
 	.photo 
 		position: relative
@@ -178,5 +136,66 @@ h1
 		p 
 			color: #eaf1f7
 			padding-top: 5px
-			font-size: 16px			
-			
+			padding-bottom: 50px
+			font-size: 16px				
+					
+@media (min-width:769px) 
+	.nav-trigger
+		display: none
+	nav
+		display: inline-block !important
+		float: right
+		margin-top: 25px
+		ul 
+			list-style: none
+			padding: 0
+			li 
+				display: inline-block
+				a 
+					display: block
+					padding: 15px
+					font-size: 18px
+					text-shadow: 1px 1px #1d6cad
+					border-bottom: 1px solid transparent
+					transition: .2s
+					&:hover
+						border-bottom: 1px solid #80bff2
+
+@media (max-width:768px)
+	.nav-trigger
+		display: inline-block
+		
+	nav
+		display: none
+		padding: 10px
+		background-color: rgba(0,0,0,0.8)
+		clear: both
+		position: absolute
+		top: 75px
+		right: 0
+		ul
+			list-style: none
+			padding: 0
+			li
+				display: block
+				padding: 10px				
+				a
+					padding: 10px
+					font-size: 18px
+					border-bottom: 1px solid transparent
+					transition: .2s
+					&:hover
+						border-bottom: 1px solid #80bff2					
+	.slogan
+		font-size: 20px
+		padding-top: 20px;
+		
+	.skills-face 
+		position: absolute
+		top: -110px
+		right: 50%
+		margin-right: -100px
+	
+	.skills
+		h1
+			padding-top: 130px
