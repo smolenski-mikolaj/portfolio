@@ -1,9 +1,20 @@
 jQuery(document).ready(function() {
 	
-	$('body').on({
-		'click': function() {
-			$('nav').slideToggle(); 
-		}
-	}, '.nav-trigger');
+	var time = 800;
+	var show = $(".show");
+
+	$('.skill').each(function() { 
+		var skill = $(this);
+		setTimeout( function(){ $(skill).fadeTo('slow', 1); }, time);
+		time += 200;
+	});
+	
+	$(window).scroll(function(d,h) {
+		show.each(function(i) {
+			a = $(this).offset().top + $(this).height() - 100;
+			b = $(window).scrollTop() + $(window).height();
+			if (a < b) $(this).fadeTo(1000,1);
+		});
+	});
 	
 });

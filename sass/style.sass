@@ -27,7 +27,7 @@ header
 	position: relative
 					
 .slogan 
-	font-size: 36px
+	font-size: 30px
 	transition: .2s
 	
 section
@@ -40,24 +40,38 @@ h1
 	font-family: "Ubuntu", sans-serif
 	transition: .2s
 	padding-bottom: 50px
+	
+p
+	color: gray
 
 .skills 
 	background: url("../images/view.jpg") no-repeat center
 	background-size: cover
 	h1
-		padding: 10px 0 100px 0
+		padding: 10px 0 50px 0
 	.row 
 		text-align: center
 		img 
 			height: 100px
+			padding-top: 20px
 			width: auto
 			max-width: 100%
+			-webkit-filter: grayscale(80%)
+			filter: grayscale(80%)
+			transition: .2s
+			&:hover
+				-webkit-filter: grayscale(0%)
+				filter: grayscale(0%)				
 		p 
 			color: #459BE4
 			padding-top: 10px
-			padding-bottom: 50px
+			padding-bottom: 20px
 			font-weight: bold
 			font-size: 16px
+
+.skill,
+.show
+	opacity: 0
 
 .skills-face 
 	position: absolute
@@ -92,11 +106,11 @@ h1
 		width: 100%
 		height: 100%
 		opacity: 0
-		background: rgba(242, 242, 242, 0.9)
+		background: rgba(73, 80, 87, 0.8)
 		transition: .3s
 	.photo-title 
 		position: absolute
-		color: #459BE4
+		color: #fff
 		top: 80%
 		width: 100%
 		font-size: 30px
@@ -117,6 +131,8 @@ h1
 			height: auto
 			o-object-fit: cover
 			object-fit: cover
+			-webkit-filter: grayscale(50%)
+			filter: grayscale(50%)
 		p 
 			padding-top: 5px
 			padding-bottom: 20px
@@ -151,6 +167,7 @@ h1
 			margin-bottom: 0	
 		.school
 			font-weight: bold
+			color: #495057
 			margin-bottom: 4px			
 		.about-school
 			display: inline-block
@@ -159,20 +176,34 @@ h1
 			font-size: 14px
 			
 .about-me,
-.more-skills
 	img
 		width: 100%
 		height: auto
 		max-width: 100%
+	
+.more-skills
+	@extend .about-me
 			
 .experience
 	@extend .education
-	background: url("../images/work2.jpg") no-repeat center
+	background: url("../images/work1.jpg") no-repeat top
 	background-size: cover
-
+	
+.contact
+	i
+		padding-right: 10px
+		color: #459BE4
+	
+footer
+	position: relative
+	padding: 20px 0
+	text-align: center
+	background: #e0e0e0
+	font-size: 14px
+	
 @media (max-width: 991px)
 	.slogan
-		font-size: 20px
+		font-size: 24px
 
 @media (max-width:768px)
 	header
@@ -188,5 +219,5 @@ h1
 
 	.skills
 		h1
-			padding: 80px 0 50px 0
+			padding: 80px 0 30px 0
 			

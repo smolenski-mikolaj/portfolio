@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
-@import url("https://fonts.googleapis.com/css?family=Lato:300");
 * {
   box-sizing: border-box; }
 
@@ -27,8 +26,7 @@ header {
   position: relative; }
 
 .slogan {
-  font-size: 36px;
-  font-family: "Lato", sans-serif;
+  font-size: 30px;
   transition: .2s; }
 
 section {
@@ -42,23 +40,37 @@ h1 {
   transition: .2s;
   padding-bottom: 50px; }
 
+p {
+  color: gray; }
+
 .skills {
   background: url("../images/view.jpg") no-repeat center;
   background-size: cover; }
   .skills h1 {
-    padding: 10px 0 100px 0; }
+    padding: 10px 0 50px 0; }
   .skills .row {
     text-align: center; }
     .skills .row img {
       height: 100px;
+      padding-top: 20px;
       width: auto;
-      max-width: 100%; }
+      max-width: 100%;
+      -webkit-filter: grayscale(80%);
+      filter: grayscale(80%);
+      transition: .2s; }
+      .skills .row img:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%); }
     .skills .row p {
       color: #459BE4;
       padding-top: 10px;
-      padding-bottom: 50px;
+      padding-bottom: 20px;
       font-weight: bold;
       font-size: 16px; }
+
+.skill,
+.show {
+  opacity: 0; }
 
 .skills-face {
   position: absolute;
@@ -93,12 +105,12 @@ h1 {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba(242, 242, 242, 0.9);
+  background: rgba(73, 80, 87, 0.8);
   transition: .3s; }
 
 .projects .photo-title {
   position: absolute;
-  color: #459BE4;
+  color: #fff;
   top: 80%;
   width: 100%;
   font-size: 30px;
@@ -118,7 +130,9 @@ h1 {
   width: 100%;
   height: auto;
   o-object-fit: cover;
-  object-fit: cover; }
+  object-fit: cover;
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%); }
 
 .projects .row p {
   padding-top: 5px;
@@ -154,6 +168,7 @@ h1 {
       margin-bottom: 0; }
     .education .row .school, .experience .row .school {
       font-weight: bold;
+      color: #495057;
       margin-bottom: 4px; }
     .education .row .about-school, .experience .row .about-school {
       display: inline-block;
@@ -161,19 +176,29 @@ h1 {
       padding-top: 5px;
       font-size: 14px; }
 
-.about-me img,
-.more-skills img {
+.about-me img, .more-skills img {
   width: 100%;
   height: auto;
   max-width: 100%; }
 
 .experience {
-  background: url("../images/work2.jpg") no-repeat center;
+  background: url("../images/work1.jpg") no-repeat top;
   background-size: cover; }
+
+.contact i {
+  padding-right: 10px;
+  color: #459BE4; }
+
+footer {
+  position: relative;
+  padding: 20px 0;
+  text-align: center;
+  background: #e0e0e0;
+  font-size: 14px; }
 
 @media (max-width: 991px) {
   .slogan {
-    font-size: 20px; } }
+    font-size: 24px; } }
 
 @media (max-width: 768px) {
   header {
@@ -186,6 +211,6 @@ h1 {
     right: 50%;
     margin-right: -100px; }
   .skills h1 {
-    padding: 80px 0 50px 0; } }
+    padding: 80px 0 30px 0; } }
 
 /*# sourceMappingURL=style.css.map */
