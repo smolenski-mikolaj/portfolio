@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
 		time += 200;
 	});
 	
-	$(window).scroll(function(d,h) {
+	$(window).scroll(function(a,b) {
 		show.each(function(i) {
 			a = $(this).offset().top + ($(window).height() / 2);
 			b = $(window).scrollTop() + $(window).height();
