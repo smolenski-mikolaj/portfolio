@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
 	
 	$(window).scroll(function(d,h) {
 		show.each(function(i) {
-			a = $(this).offset().top + $(this).height() - 100;
+			a = $(this).offset().top + ($(window).height() / 2);
 			b = $(window).scrollTop() + $(window).height();
 			if (a < b) $(this).fadeTo(1000,1);
 		});
